@@ -83,8 +83,10 @@ function ex5(str) {
         **A palindrome is a string which reads the same backward as forward. For example, “Race Car” and “Anna” are palindromes. “Apple Pie” and “John” are not. Ignore spaces in deciding a palindrome.
 
     */
+    str_lower=str.toLowerCase().replaceAll(" ","")
+    str_reversed=str_lower.split(" ").reverse().join("")
 
-    return ""
+    return (str_lower==str_reversed)
 
 }
 
@@ -128,6 +130,7 @@ function checkStatus(student) {
         const student = { name: "Alice", score: 65 }
           
         (in this example, the function return 'Pass')
+        
 */
    
 }
