@@ -10,7 +10,7 @@ function ex1() {
     person.firstName = "Jun";
     cars[0] = "what";
     
-    return "YournalSaab" // e.g., "YournalSaab"
+    return  newperson['firstName']+newcars[0]// e.g., "YournalSaab"
 
 }
 
@@ -107,9 +107,15 @@ function computeAverageScore(students) {
 
     */
     let result = 0
+    let student_num=0
    
+    for (student of students){
+        result+=student['score']
+        student_num++
+    }
 
-    return result
+    avg_score=result/student_num
+    return avg_score
 }
 
 function checkStatus(student) {
