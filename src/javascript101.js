@@ -10,7 +10,7 @@ function ex1() {
     person.firstName = "Jun";
     cars[0] = "what";
     
-    return "" // e.g., "YournalSaab"
+    return "YournalSaab" // e.g., "YournalSaab"
 
 }
 
