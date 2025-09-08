@@ -10,7 +10,7 @@ function ex1() {
     person.firstName = "Jun";
     cars[0] = "what";
     
-    return "" // e.g., "YournalSaab"
+    return  newperson['firstName']+newcars[0]// e.g., "YournalSaab"
 
 }
 
@@ -83,8 +83,10 @@ function ex5(str) {
         **A palindrome is a string which reads the same backward as forward. For example, “Race Car” and “Anna” are palindromes. “Apple Pie” and “John” are not. Ignore spaces in deciding a palindrome.
 
     */
+    str_lower=str.toLowerCase().replaceAll(" ","")
+    str_reversed=str_lower.split(" ").reverse().join("")
 
-    return ""
+    return (str_lower==str_reversed)
 
 }
 
@@ -107,9 +109,15 @@ function computeAverageScore(students) {
 
     */
     let result = 0
+    let student_num=0
    
+    for (student of students){
+        result+=student['score']
+        student_num++
+    }
 
-    return result
+    avg_score=result/student_num
+    return avg_score
 }
 
 function checkStatus(student) {
@@ -122,6 +130,7 @@ function checkStatus(student) {
         const student = { name: "Alice", score: 65 }
           
         (in this example, the function return 'Pass')
+        
 */
    
 }
